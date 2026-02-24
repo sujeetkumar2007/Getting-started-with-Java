@@ -10,5 +10,5 @@ public static void main(String[] args){
     System.out.println("Year: " + year);    
     System.out.println("Branch: " + branch);
     System.out.println("CGPA: " + cgpa);
-    System.out.println("Hosteller: " + isHosteller);
-}}
+    System.out.println("Hosteller: " + isHosteller);}
+}
