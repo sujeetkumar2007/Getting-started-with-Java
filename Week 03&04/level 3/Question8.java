@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Question8 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        int originalNumber = number;
+        int sum = 0;
+        while (number > 0) {
+            int digit = number % 10;
+            sum = sum + digit;
+            number = number / 10;
+        }
+
+        if (originalNumber % sum == 0) {
+            System.out.println("Harshad Number");
+        } else {
+            System.out.println("Not a Harshad Number");
+        }
+
+        scanner.close();
+    }
+}

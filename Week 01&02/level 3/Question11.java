@@ -6,5 +6,6 @@ public class Question11 {
         float weight = scanner.nextFloat();
         float pound = weight/2.2f;
         System.out.printf("The weightof the person in pound is %.2f and in kg is %.2f",pound,weight);
+        scanner.close();
     }
 }

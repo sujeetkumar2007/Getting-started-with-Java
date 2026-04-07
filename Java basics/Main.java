@@ -1,27 +1,24 @@
-/*int myAge = 30;
-        int herAge = myAge;
-        byte age = 30;
-        long viewsCount = 3_123_456_789L;
-        float price = 10.99f;
-        char letter = 'A';
-        boolean isEligible =  false;  
-        System.out.println(herAge);*/
-
-        /*byte age = 30;
-        Date now = new Date();
-        System.out.println(now); */
-
-
-
-public class Main {
-    public static void main(String[] args){
-      String x ="1";
-      
-      int y = Integer.parseInt(x)+2;
-      System.out.println(y);
-      
-      
-       
-
+class Student{
+  String name;
+  int marks;
+  Student(String name, int marks){
+    this.name = name;
+    this.marks = marks;
+  }
+  void display(){
+    System.out.println("hello "+name+", Marks: "+marks);
+  }
+}
+  public class Main {
+    public static void main(String[] args) {
+      Student[] students = new Student[4];
+      students[0] = new Student("Sujeet", 100);
+      students[1] = new Student("Harish", 120);
+      students[2] = new Student("Saran", 123);
+      students[3] = new Student("Poojith", 190);
+      for(int i=0;i<=students.length;i++){
+        students[i].display();
+      }
     }
+  
 }
